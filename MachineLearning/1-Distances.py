@@ -23,7 +23,7 @@ def hamming_distance(pt1, pt2):  # Calculates the Hamming Distance between two c
 # Below shows how to use scipy to shorten the blocks of code down to one function
 
 print(distance.euclidean([1,2],[4,0]))
-print(distance.cityblock([1,2],[4,0])) # Manhattan distance is renamed to citblock distance in scipy
+print(distance.cityblock([1,2],[4,0])) # Manhattan distance is renamed to cityblock distance in scipy
 print(distance.hamming([5,4,9],[1,7,9]))
 
 print(euclidean_distance([1, 2], [4, 0]))
