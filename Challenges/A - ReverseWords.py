@@ -3,15 +3,15 @@
 # Input: "My Name Is Evan" Output: "Evan Is Name My"
 def word_reverser(phrase):
     word, reverse, hold = "", "", []
-    for x in phrase:
-        if x != ' ': word += x
-        else:
+    for x in phrase:                  # Turns the string into a char array without reinitializing
+        if x != ' ': word += x        
+        else:                         # When the end of a word is found, save the word to an array of words
             hold.append(word)
-            hold.append(" ")
+            hold.append(" ")          # Add a space
             word = ""
-    hold.append(word)
-    hold.reverse()
-    for x in hold: reverse += x
+    hold.append(word)                 # Add the last word, no space
+    hold.reverse()                    # Reverse the word order
+    for x in hold: reverse += x       # Convert array to string
     return reverse
 
 
