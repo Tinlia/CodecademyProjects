@@ -14,3 +14,15 @@ def unique_characters(string_in):
     return True
 
 print(unique_characters("Apple"))
+
+
+# Below is a more compact version, but takes longer to perform
+
+# def unique_characters(s):
+#     c = 1
+#     word = s.lower()
+#     if s == "": return "Invalid input"
+#     for x in word:
+#         if x in word[c:]: return False
+#         c += 1
+#     return True
