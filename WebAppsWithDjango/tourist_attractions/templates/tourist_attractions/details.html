@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+  {% block head %}
+    <link rel="stylesheet" href="{% static 'tourist_attractions/style.css' %}">
+  {% endblock %}
+</head>
+<body>
+  {% block content %}
+    <h1>This is a list of tourist attractions for {{statename|title}}</h1>
+
+    <table>
+      <tr>
+        <th>Attraction</th>
+        <th>State</th>        
+      </tr>     
+      {% for item in attractions|dictsort:"state" %}
+        {% if item.state|lower == statename %}
+          <tr>
+            <td>{{item.attraction_name|title}}</td>
+            <td>{{item.state|title}}</td>
+          </tr>
+        {% endif %}
+      {% endfor %} 
+    </table>
+  {% endblock %}
+</body>
+<br>
+<a href="{% url 'home' %}">Take me home</a>
