@@ -4,10 +4,10 @@ This is a file used for reference when creating and manipulating models.
 
 ## Additional notes
 ### Migrating Models
-When applying a change to any models, a migration must occur to save the changes. this can be done using
+When applying a change to any number of models, a migration must occur to save the changes. This can be done using
 `$ python3 manage.py makemigrations` in the project root
 
-This will create a new file called 0001_name.py which saves the migration details.
+This will create a new file called <nnnn>_<name>.py, which saves the migration details. (i.e., the first migration may be called `0001_initial.py`)
 
 To finalize the migrations process, the command `$ python3 manage.py migrate` can be used in the project root.
 
