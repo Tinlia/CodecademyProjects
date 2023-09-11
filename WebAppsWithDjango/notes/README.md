@@ -34,7 +34,7 @@ def login_view(request):
 ```
 
 ## Logging in
-```html
+```HTML
 
 {% load static %}
 
