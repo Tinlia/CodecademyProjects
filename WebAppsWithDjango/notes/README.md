@@ -32,3 +32,22 @@ def login_view(request):
   else:
     return HttpResponse("Invalid credentials!")
 ```
+
+## Logging in
+```html
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'vetoffice/style.css' %}">
+
+<h2>Please login</h2>
+<form class="login" method="post">
+  <div>
+    {% csrf_token %}
+    <!-- Add your form.as_p method below -->
+    {{ form.as_p }}
+    <input type="submit" value="Login"/>
+  </div>
+</form>
+
+```
