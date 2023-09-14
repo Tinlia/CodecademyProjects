@@ -4,7 +4,7 @@ This is a list of completed challenged from Codecademy's Python 3 Challenges lis
 I - Intermediate Challenge
 A - Advanced Challenge
 
-## 13 / 25 Challenges Completed (52%)
+## 14 / 25 Challenges Completed (56%)
 
 ~~Prime Number Finder~~
 
@@ -40,7 +40,7 @@ Capturing Rainwater
 
 Number Permutation
 
-Semi-Prime Numbers
+~~Semi-Prime Numbers~~
 
 Swap Elements in a Linked List
 
