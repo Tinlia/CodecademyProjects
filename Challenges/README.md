@@ -1,5 +1,5 @@
 # Codecademy Challenges
-This is a list of completed challenged from Codecademy's Python 3 Challenges list
+This is a list of completed challenges from Codecademy's Python 3 Challenges list
 
 I - Intermediate Challenge
 A - Advanced Challenge
@@ -55,5 +55,3 @@ Stairmaster
 The Knapsack Problem
 
 ~~Unique Characters In A String~~
-
-Unique Characters in a String
