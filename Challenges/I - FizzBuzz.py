@@ -1,5 +1,6 @@
 # Evan "Tinlia" Kimpton
 # Replace every multiple of 3 with Fizz, 5 with Buzz, and multiples of 3 and 5 with FizzBuzz
+# Return an array of numbers and strings
 def fizzbuzz(limit):
   types = {
     3: "Fizz",
