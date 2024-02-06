@@ -10,4 +10,7 @@ def max_profit_days(stock_prices):
   if hold[0] == hold[1]: hold[1] += 1       # Prevents the buy/sell dates from being the same
   return hold[0], hold[1]                   # return buy date, sell date
 
-print(max_profit_days([150, 150, 1]))
+print(max_profit_days([150, 150, 1])) # (0,1)
+print(max_profit_days([17, 11, 60, 25, 150, 75, 31, 120])) # (1,4)
+print(max_profit_days([17, 11, 60, 25, 150, 75, 31, 120, 1])) # (1,4)
+print(max_profit_days([17, 11, 60, 25, 150, 75, 31, 120, 1, 150])) # (1,9)
